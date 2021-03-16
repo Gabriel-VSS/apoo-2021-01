@@ -14,4 +14,12 @@ public class Produto {
 		return nome;
 	}
 	
+	public void setId(Integer novoId) {
+		id = novoId;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	
 }
