@@ -9,7 +9,9 @@ public class Produto {
 	private String descricao;
 	
 	private Integer quantidade;
-
+	
+	private Categoria categoria;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -37,9 +39,17 @@ public class Produto {
 	public Integer getQuantidade() {
 		return quantidade;
 	}
-
+	
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
+	}
+	
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 	
 }
