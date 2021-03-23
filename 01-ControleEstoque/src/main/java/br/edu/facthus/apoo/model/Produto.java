@@ -12,6 +12,8 @@ public class Produto {
 	
 	private Categoria categoria;
 	
+	private Fabricante fabricante;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -50,6 +52,14 @@ public class Produto {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	public Fabricante getFabricante() {
+		return fabricante;
+	}
+
+	public void setFabricante(Fabricante fabricante) {
+		this.fabricante = fabricante;
 	}
 	
 }

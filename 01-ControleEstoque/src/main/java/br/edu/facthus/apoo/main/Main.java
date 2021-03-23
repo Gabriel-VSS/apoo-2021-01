@@ -1,6 +1,7 @@
 package br.edu.facthus.apoo.main;
 
 import br.edu.facthus.apoo.model.Categoria;
+import br.edu.facthus.apoo.model.Fabricante;
 import br.edu.facthus.apoo.model.Produto;
 
 public class Main {
@@ -11,6 +12,15 @@ public class Main {
 		informatica.setId(1);
 		informatica.setNome("Informática");
 		
+		// Cria os fabricantes
+		Fabricante samsung = new Fabricante();
+		samsung.setId(1);
+		samsung.setNome("Samsung");
+		
+		Fabricante logitech = new Fabricante();
+		logitech.setId(2);
+		logitech.setNome("Logitech");
+		
 		// Instancia um produto
 		// Atribui os campos
 		Produto p = new Produto();
@@ -19,6 +29,7 @@ public class Main {
 		p.setDescricao("Monitor LED 13 Polegadas");
 		p.setQuantidade(10);
 		p.setCategoria(informatica);
+		p.setFabricante(samsung);
 		
 		// Imprime os campos
 		System.out.println("Id: " + p.getId());
@@ -26,6 +37,7 @@ public class Main {
 		System.out.println("Descrição: " + p.getDescricao());
 		System.out.println("Quantidade: " + p.getQuantidade());
 		System.out.println("Categoria: " + p.getCategoria().getNome());
+		System.out.println("Fabricante: " + p.getFabricante().getNome());
 		System.out.println("------\n\n");
 		
 		// Instancia um 2o produto
@@ -35,12 +47,14 @@ public class Main {
 		p2.setDescricao("Teclado Mecânico ABNT 2");
 		p2.setQuantidade(50);
 		p2.setCategoria(informatica);
+		p2.setFabricante(logitech);
 		
 		System.out.println("Id: " + p2.getId());
 		System.out.println("Nome: " + p2.getNome());
 		System.out.println("Descrição: " + p2.getDescricao());
 		System.out.println("Quantidade: " + p2.getQuantidade());
 		System.out.println("Categoria: " + p2.getCategoria().getNome());
+		System.out.println("Fabricante: " + p2.getFabricante().getNome());
 		
 	}
 
