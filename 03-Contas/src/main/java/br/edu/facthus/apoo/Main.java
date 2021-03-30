@@ -13,13 +13,19 @@ public class Main {
 		
 		conta.deposito(50);
 		conta.imprime();
-		
+		/*
 		System.out.println("Digite o valor do depósito:");
 		Scanner scanner = new Scanner(System.in);
 		Integer valor = scanner.nextInt();
 		conta.deposito(valor);
 		conta.imprime();
+		*/
 		
+		conta.saque(1000);
+		conta.imprime();
+		
+		conta.saque(100);
+		conta.imprime();
 	}
 
 }

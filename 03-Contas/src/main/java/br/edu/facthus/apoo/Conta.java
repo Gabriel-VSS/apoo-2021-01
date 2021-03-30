@@ -37,6 +37,17 @@ public class Conta {
 				valor);
 		
 	}
+	
+	public void saque(Integer valor) {
+		if (valor > saldo) {
+			System.err.println("Saldo insuficiente.");
+			return;
+		}
+		
+		saldo -= valor;
+		System.out.printf("Saque de R$ %d realizado com sucesso!\n",
+				valor);
+	}
 
 	public Integer getAgencia() {
 		return agencia;
