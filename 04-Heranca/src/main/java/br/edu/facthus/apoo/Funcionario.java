@@ -8,7 +8,7 @@ public class Funcionario {
 	
 	protected Integer salario;
 	
-	private LocalDate dataAdmissao;
+	protected LocalDate dataAdmissao;
 
 	public Funcionario(String nome, 
 			Integer salario, 
@@ -20,8 +20,12 @@ public class Funcionario {
 	}
 	
 	public void imprimeRemuneracao() {
-		System.out.printf("Nome: %s - Remuneração: R$ %d\n",
-				nome, salario);
+		System.out.printf("Nome: %s\nRemuneração: R$ %d\n",
+				nome, getRemuneracao());
+	}
+	
+	public Integer getRemuneracao() {
+		return salario;
 	}
 	
 }

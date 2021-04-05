@@ -15,10 +15,8 @@ public class Gerente extends Funcionario {
 	}
 	
 	@Override
-	public void imprimeRemuneracao() {
-		System.out.printf("Nome: %s - Remuneração: R$ %d\n",
-				nome,
-				salario + gratificacao);
+	public Integer getRemuneracao() {
+		return salario + gratificacao;	
 	}
 	
 }
